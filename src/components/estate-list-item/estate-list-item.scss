@@ -1,0 +1,72 @@
+.estate-list-item {
+  transition: box-shadow 150ms;
+
+  &:hover {
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+  }
+}
+
+.estate-list-item__wrap-link {
+  text-decoration: none;
+}
+
+.estate-list-item__image {
+  display: block;
+
+  width: 100%;
+}
+
+.estate-list-item__content {
+  padding: 5px;
+}
+
+.estate-list-item__title {
+  display: block;
+
+  margin-bottom: 5px;
+
+  transition: color 150ms;
+
+  color: dodgerblue;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  .estate-list-item__wrap-link:hover &,
+  .estate-list-item__wrap-link:focus & {
+    color: tomato;
+  }
+}
+
+.estate-list-item__price {
+  margin-bottom: 5px;
+
+  color: black;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.estate-list-item__address {
+  color: darkgray;
+
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .estate-list-item__wrap-link {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .estate-list-item__image {
+    flex-shrink: 0;
+
+    width: 33%;
+    height: auto;
+  }
+
+  .estate-list-item__content {
+    padding: 0 5px;
+  }
+}

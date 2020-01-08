@@ -1,0 +1,90 @@
+.estate-object {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.estate-object__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin-bottom: 15px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.estate-object__backward {
+  padding-right: 15px;
+
+  transition: color 150ms;
+  transition: fill 150ms;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  color: dodgerblue;
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 0;
+
+  &:hover,
+  &:focus {
+    fill: tomato;
+  }
+
+  .icon-back {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.estate-object__title {
+  margin: 10px 0;
+}
+
+.estate-object__price {
+  margin-bottom: 5px;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.estate-object__address {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+.estate-object__description {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  color: dimgray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.estate-object__sellerName {
+  margin-bottom: 10px;
+
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .estate-object__title {
+    font-size: 18px;
+  }
+
+  .estate-object__main-image-container {
+    height: 300px;
+  }
+
+  .estate-object__images-list {
+    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+  }
+
+  .estate-object__images-item {
+    height: 35px;
+  }
+}

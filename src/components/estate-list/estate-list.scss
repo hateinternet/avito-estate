@@ -1,0 +1,26 @@
+.estate-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 15px auto;
+  padding: 0;
+}
+
+.estate-list__title {
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.estate-list__content {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 7px;
+}
+
+@media (max-width: 500px) {
+  .estate-list__content {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
