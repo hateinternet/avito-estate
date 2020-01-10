@@ -1,10 +1,12 @@
-.error-indicator {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+@import '../../common/variables';
+@import '../../common/mixins';
 
-  height: 200px;
+.error-indicator {
+  @include flexbox();
+
+  flex-direction: column;
+
+  height: 100%;
 }
 
 .error-indicator__icon {
@@ -17,5 +19,21 @@
 }
 
 .error-indicator__text {
+  margin-bottom: 5px;
+
   font-size: 18px;
+}
+
+.error-indicator__link {
+  transition: $transition;
+  text-decoration: none;
+
+  color: $color-link;
+
+  font: bold;
+  font-size: 18px;
+
+  &:hover {
+    color: $color-link-active;
+  }
 }

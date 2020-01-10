@@ -14,7 +14,9 @@ const EstateList = ({ data: items }) => {
 
   return (
     <div className="estate-list">
-      <h2 className="estate-list__title">Все предложения</h2>
+      <div className="estate-list__header">
+        <h2 className="estate-list__title">Все предложения</h2>
+      </div>
       <div className="estate-list__content">
         {
           items.map(item => (

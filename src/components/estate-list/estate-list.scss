@@ -1,14 +1,15 @@
+@import '../../common/mixins';
+
 .estate-list {
-  width: 100%;
-  max-width: 900px;
-  margin: 15px auto;
-  padding: 0;
+  @include container();
+}
+
+.estate-list__header {
+  @include header();
 }
 
 .estate-list__title {
-  padding-bottom: 10px;
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 
 .estate-list__content {
@@ -19,6 +20,10 @@
 }
 
 @media (max-width: 500px) {
+  .estate-list__title {
+    font-size: 18px;
+  }
+
   .estate-list__content {
     grid-template-columns: 1fr;
     grid-gap: 10px;

@@ -1,0 +1,19 @@
+@mixin container() {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+@mixin header() {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@mixin flexbox($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

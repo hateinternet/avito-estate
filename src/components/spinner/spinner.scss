@@ -1,9 +1,9 @@
-.spinner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@import '../../common/mixins';
 
-  height: 200px;
+.spinner {
+  height: 100%;
+
+  @include flexbox();
 }
 
 @keyframes ldio-so0ery5ikqj-1 {
